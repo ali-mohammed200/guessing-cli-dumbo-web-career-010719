@@ -8,7 +8,9 @@ def run_guessing_game
   else
     puts "The computer guessed #{randNumb}."
   end
+  while userInp != "exit"
+    run_guessing_game
+  end
   # if userInp == "exit"
-  #   puts "Goodbye!"
-  # end
+  puts "Goodbye!"
 end
